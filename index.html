@@ -1,0 +1,259 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>My Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<style>
+			.popup {
+				background-color: darkseagreen;
+				width: 900px;
+				height: 450px;
+				position: absolute;
+				top: 1450px;
+				left: 15%;
+				color: black;
+				display: none;
+			}
+
+			.puHead {
+				background-color: darkseagreen;
+				padding: 10px;
+			}
+
+			.puImage {
+				background-color: seagreen;
+				padding-left: 10px;
+				width: 430px;
+				height: 350px;
+				float: left;
+				border-right: 4px solid white;
+			}
+
+			.puDiv {
+				background-color: seagreen;
+				padding-left: 10px;
+				width: 430px;
+				height: 350px;
+				float: right;
+			}
+
+			.puDes {
+				background-color: seagreen;
+				height: 280px;
+				margin-bottom: 10px;
+				border-bottom: 6px dotted white;
+				font-size: 10pt;
+			}
+
+			.puExit {
+				float: right;
+				color: white;
+				background-color: transparent;
+				border-radius: 15px;
+				font-size: 18px;
+				padding: 1px 9px;
+			}
+		</style>
+		<!-- Header -->
+		<section id="header">
+			<header class="major">
+				<h1>Ashley Skye Pearce</h1>
+				<p>Software Developer: <a href="file:///C:/Users/Frog/Desktop/Website%201/Resume%20Ashley%20Pearce.pdf">My Resume</a></p>
+			</header>
+			<div class="container">
+				<ul class="actions special">
+					<li><a href="#one" class="button primary scrolly">Begin</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- One -->
+		<section id="one" class="main special">
+			<div class="container">
+				<span class="image fit primary"><img src="images/pic01.jpg" alt="" /></span>
+				<div class="content">
+					<header class="major">
+						<h2>Intro</h2>
+					</header>
+					<p>My name is Ashley Pearce. I have grown up in the Springfield area my whole life and I have recently 
+					just graduate from Southwest Baptist University in December of 2021 with a major in Computer Science and a minor
+					in Mathematics. I am looking for a programming job that focuses on problem solving and that plays towards my 
+					strengths. I enjoy making people’s lives easier and their workdays more efficient. Below are some of my 
+					works from my last three years of college. <br />2019-2021</p>
+				</div>
+				<a href="#two" class="goto-next scrolly">Next</a>
+			</div>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="main special">
+			<div class="container">
+				<span class="image fit primary"><img src="images/pic02.jpg" alt="" /></span>
+				<div class="content">
+					<header class="major">
+						<h2>My Work</h2>
+					</header>
+
+					<ul class="icons-grid">
+						<li>
+							<span class="icon solid major fa-braille" onclick="openForm1()"></span>
+							<h3 onclick="openForm1()">AI Projects <br />(Python/ Tensorflow)</h3>
+						</li>
+						<li>
+							<span class="icon solid major fa-pencil-alt" onclick="openForm2()"></span>
+							<h3 onclick="openForm2()">Senior Project <br /> 2020-2021 <br />(c#/ html)</h3>
+						</li>
+						<li>
+							<span class="icon solid major fa-gamepad" onclick="openForm3()"></span>
+							<h3 onclick="openForm3()">Side-Scroller <br />Game for Children <br />(java)</h3>
+						</li>
+						<li>
+							<span class="icon solid major fa-shopping-bag" onclick="openForm4()"></span>
+							<h3 onclick="openForm4()">Self-check<br /> out UI <br />(Java)</h3>
+						</li>
+					</ul>
+				</div>
+				<a href="#three" class="goto-next scrolly">Next</a>
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section id="three" class="main special">
+			<div class="container">
+				<span class="image fit primary"><img src="images/pic03.jpg" alt="" /></span>
+				<div class="content">
+					<header class="major">
+						<h2>Get Connected</h2>
+					</header>
+					<ul class="icons">
+						<li><a href="https://github.com/Pearce2211mo" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/pearce2211/" class="icon brands alt fa-linkedin-square"><span class="label">Linkedin</span></a></li>
+					
+					</ul>
+				</div>
+				<!--<a href="#footer" class="goto-next scrolly">Next</a>-->
+
+			</div>
+
+		</section>
+		<div id="prj1" class="popup">
+			<div class="puHead">
+				<button class="puExit" onclick="closeForm()">X</button>
+				<h2>Experimental Learning with Artificial Intelligence Projects 2021 (Python/ TensorFlow)</h2>
+			</div>
+			<div class="puImage"><img src="images/prj1Im.png" alt="" /></div>
+			<div class="puDiv">
+				<div class="puDes">
+					<p>This is my personal notes and projects from my AI class</p>
+					<ul>
+						<li><a href="https://colab.research.google.com/drive/1FwjJVGQ7bm6CPVA104Td7XHKp22TooCF?usp=sharing">Simplified Image Identifier: </a>Identifies the type of clothing piece based off of a defined pixel image.</li>
+						<li><a href="https://colab.research.google.com/drive/1Qmd2HdQONAgdSN_mrqFVrjJe7_Q5XOgq?usp=sharing">Image Identifier: </a>Identifies whether an image is one of these 10 possibilities: 
+						airplane, car, bird, cat, deer, dog, frog, horse, ship, truck</li>
+						<li><a href="https://colab.research.google.com/drive/1FwjJVGQ7bm6CPVA104Td7XHKp22TooCF?usp=sharing">Autofill (AI learning to write)</a>This is a program learning to predict the next letter in the play Romeo and Juliet</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--Project2-->
+		<div id="prj2" class="popup">
+			<div class="puHead">
+				<button class="puExit" onclick="closeForm()">X</button>
+				<h2>Senior Project: Purchase Request System <br />2020-2021 (c#/HTML/CSS)</h2>
+			</div>
+			<div class="puImage"><img src="images/prj2Im.png" alt="" /></div>
+			<div class="puDiv">
+				<div class="puDes">The goal of this project is to create a new and improved Purchase Request System for the 
+				Missouri Department of Revenue.This new system will manage the creation of users and the users' purchasess.
+				These purchases will be put through an approval process within the system. Each purchase request may have multiple
+				 items and may be purchased for multiple deparments requiring multiple accounting lines. There are four different types
+				of users: admin, approver, requester, buyer. There are nine unique web pages.
+				
+				</div>
+				<div>
+					<a href="https://senior-prj.pearcea.repl.co/dashboard2.php">Beta Version  </a> with <a href="https://replit.com/@PearceA/Senior-prj#index.php">Code Access</a>
+					<br />
+					<a href="https://docs.google.com/document/d/1nKgxCX0olxZVwzDSJQp7EtrwbPy4yhJm7-C-MlOu4V8/edit?usp=sharing">Documentation</a> with
+					<a href="https://docs.google.com/document/d/11DQFhPtjamCPIfKaJM_P0PdI8AGnm_yhk5iX1d02mPw/edit?usp=sharing">Training Manual</a>
+				
+				</div>
+			</div>
+		</div>
+		<div id="prj3" class="popup">
+			<div class="puHead">
+				<button class="puExit" onclick="closeForm()">X</button>
+				<h2>2D Side-Scroller Spelling Game for Children 2019 (Java)</h2>
+			</div>
+			<div class="puImage"><img src="images/prj3Im.png" alt="" /></div>
+			<div class="puDiv">
+				<div class="puDes">This is an interactive children's game built in Java. It contains cells and rows of colored tiles that
+				flash images to imulate an old 2D side-scroller. The first half of the game involves moving boats and islands. The player is 
+				able to move their boat up and down to avoid collsions, as well as shoot cannon balls into oncoming enemy ships. The secound 
+				half of the game begins when users dock at an island. They are able to take control of a pirate and search for teasure. However 
+				they are only able to optain the treasure/ points by answering spelling questions correctly. This is a fun interactive game
+				with a homescreen, leaderboard, and many fun secrets.</div>
+				<div><a href="https://github.com/Pearce2211mo/Pirate-Game.git">Github Repository</a></div>
+			</div>
+		</div>
+		<div id="prj4" class="popup">
+			<div class="puHead">
+				<button class="puExit" onclick="closeForm()">X</button>
+				<h2>Experimental Self Check-out 2019 (Java)</h2>
+			</div>
+			<div class="puImage"><img src="images/prj4Im.png" alt="" /></div>
+			<div class="puDiv">
+				<div class="puDes">
+					This project was the start of creating a look up system for a self check-out. This project contains all methods
+					you would need to be the foundation of a UI system. Instead of scanning items, you instead input them by a code as if a computer
+					would do after a user scanned an item. Some functionalities include getting and setting codes and prices, adding discounts, and
+					comparing products.
+				</div>
+				<div><a href="https://github.com/Pearce2211mo/Self-Check-Out.git">Github Repository</a></div>
+			</div>
+		</div>
+
+		<script>
+			function openForm1() {
+				document.getElementById("prj1").style.display = "block";
+				document.body.style.overflow = "hidden";
+			}
+			function openForm2() {
+				document.getElementById("prj2").style.display = "block";
+				document.body.style.overflow = "hidden";
+
+			}
+			function openForm3() {
+				document.getElementById("prj3").style.display = "block";
+				document.body.style.overflow = "hidden";
+
+			}
+			function openForm4() {
+				document.getElementById("prj4").style.display = "block";
+				document.body.style.overflow = "hidden";
+
+			}
+
+
+			function closeForm() {
+				document.getElementById("prj1").style.display = "none";
+				document.getElementById("prj2").style.display = "none";
+				document.getElementById("prj3").style.display = "none";
+				document.getElementById("prj4").style.display = "none";
+				document.body.style.overflow = "visible";
+			}
+		</script>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
